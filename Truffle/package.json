@@ -1,0 +1,24 @@
+{
+    "name": "my_big_project",
+    "version": "1.0.0",
+    "description": "A big Truffle Ethereum project integrated with BigchainDB server",
+    "scripts": {
+      "test": "truffle test",
+      "migrate": "truffle migrate",
+      "start": "node bigchaindb-connection/index.js"
+    },
+    "dependencies": {
+      "bigchaindb-driver": "^3.1.1",
+      "truffle": "^6.1.1"
+    },
+    "devDependencies": {
+      "ganache-cli": "^7.1.0"
+    },
+    "keywords": [
+      "ethereum",
+      "truffle",
+      "bigchaindb"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+  }

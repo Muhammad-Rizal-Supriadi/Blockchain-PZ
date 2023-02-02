@@ -1,6 +1,6 @@
 pragma solidity ^0.7.0;
 
-import "./bigchaindb-connection.js";
+import "./connection.js";
 
 contract MyData {
     function storeData(string memory data) public {
