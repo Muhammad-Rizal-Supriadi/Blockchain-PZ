@@ -1,0 +1,55 @@
+{
+    "genesis_time":"0001-01-01T00:00:00Z",
+    "chain_id":"zilla-chain-1",
+    "consensus_params":{
+       "block_size_params":{
+          "max_bytes":"22020096",
+          "max_txs":"10000",
+          "max_gas":"-1"
+       },
+       "tx_size_params":{
+          "max_bytes":"10240",
+          "max_gas":"-1"
+       },
+       "block_gossip_params":{
+          "block_part_size_bytes":"65536"
+       },
+       "evidence_params":{
+          "max_age":"100000"
+       }
+    },
+    "validators":[
+       {
+          "pub_key":{
+             "type":"tendermint/PubKeyEd25519",
+             "value":"Xqm2lGIunw8ED/nP1gTxN3HMcMGBNtGWkF5GpHqpep8="
+          },
+          "power":10,
+          "name":"Muhammad Rizal Supriadi"
+       },
+       {
+          "pub_key":{
+             "type":"tendermint/PubKeyEd25519",
+             "value":"dIHXzXfNQvBU2ekQ3Iax6E2pM1meHuzYGxpUuTAzlRM="
+          },
+          "power":10,
+          "name":"Aldhi"
+       },
+       {
+          "...":{
+ 
+          }
+ 
+       },
+       {
+          "pub_key":{
+             "type":"tendermint/PubKeyEd25519",
+             "value":"<Member N public key>"
+          },
+          "power":10,
+          "name":"<Member N name>"
+       }
+    ],
+    "app_hash":""
+ }
+ 

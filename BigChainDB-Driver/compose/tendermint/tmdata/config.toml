@@ -15,3 +15,17 @@ laddr = "tcp://0.0.0.0:46657"
 
 [p2p]
 laddr = "tcp://0.0.0.0:46656"
+
+# -------------------------------------------------
+
+moniker = "zilla-chain-1"
+create_empty_blocks = false
+log_level = "main:info,state:info,*:error"
+
+persistent_peers = "50e2f7d21ca48a4de25c154e92b111cfc7f5fbef@rizal-MS-7D09:26656,\
+8195fbd97ccd07f2593ab7255a1a29c5cc3d84be@echaoeoen-MS-7D32:26656"
+
+send_rate = 102400000
+recv_rate = 102400000
+
+recheck = false
