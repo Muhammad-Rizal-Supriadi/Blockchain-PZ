@@ -33,18 +33,20 @@ services:
       retries: 3
     command: -l DEBUG start
   tendermint:
-    image: tendermint/tendermint:latest
+    image: tendermint/tendermint:v0.31.5
     # volumes:
     #   - ./tmdata:/tendermint
     entrypoint: ''
     ports:
       - "26660:26657"
       - "26661:26656"
+    networks:
+      - tendermint-network
     command: sh -c "tendermint init && tendermint node --consensus.create_empty_blocks=false --proxy_app=tcp://bigchaindb:26658"
 
 
   node1:
-    image: tendermint/tendermint:latest
+    image: tendermint/tendermint:v0.31.5
     command: node
     hostname: rizal-MS-7D09
     ports:
@@ -55,7 +57,7 @@ services:
     extra_hosts:
       - "rizal-MS-7D09:192.168.1.42"
   node2:
-    image: tendermint/tendermint:latest
+    image: tendermint/tendermint:v0.31.5
     command: node
     hostname: echaoeoen-MS-7D32
     ports:
@@ -64,7 +66,7 @@ services:
     networks:
       - tendermint-network
     extra_hosts:
-    - "rechaoeoen-MS-7D32:192.168.18.142"
+    - "echaoeoen-MS-7D32:192.168.18.142"
 networks:
   tendermint-network:
     driver: bridge
